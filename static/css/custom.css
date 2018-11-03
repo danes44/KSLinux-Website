@@ -1,0 +1,9 @@
+.event{
+    max-width: 300px;
+    margin: 25px;
+}
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

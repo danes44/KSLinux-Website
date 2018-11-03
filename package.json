@@ -1,0 +1,23 @@
+{
+  "name": "kslinux-uajy-website",
+  "version": "1.0.0",
+  "description": "Website KSL UAJY",
+  "main": "generate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haruute0/KSLinux-Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haruute0/KSLinux-Website/issues"
+  },
+  "homepage": "https://github.com/haruute0/KSLinux-Website#readme",
+  "dependencies": {
+    "mustache": "^3.0.0",
+    "ncp": "^2.0.0"
+  }
+}

@@ -2,134 +2,45 @@
 <html lang="id">
 	<head>
 		<meta charset="UTF-8"/>
+		<title>KSL UAJY</title>
 		<meta name="description" content="Website Kelompok Studi Linux Universitas Atma Jaya Yogyakarta"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<script type="text/javascript" src="script.js"></script>
-		 <!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+		<!-- Bulma.io css library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+		<link rel="stylesheet" href="css/custom.css">
 
-		<!-- Popper JS -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-
-		<!-- Latest compiled JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> 
-		<link rel="stylesheet" href="style.css"/>
-		<link rel="shortcut icon" href="https://ksl.himaforka-uajy.org/workshop2017/img/logoKsl.png"/>
-		<title>KSL UAJY</title>
+		<!-- FontAwesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/brands.css" integrity="sha384-BCEeiNUiLzxxoeYaIu7jJqq0aVVz2O2Ig4WbWEmRQ2Dx/AAxNV1wMDBXyyrxw1Zd" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous">
 	</head>
+
 	<body>
-		<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-			<!-- Brand -->
-			<a class="navbar-brand" href="index.html">Home</a>
-
-			<!-- Links -->
-			<ul class="navbar-nav nav" role="tablist">
-				<li class="nav-item">
-					<a class="nav-link" data-toggle="tab" href="#upcomingEvents">Upcoming Events</a>
-				</li>
-				<li class="navbar-nav">
-					<a class="nav-link" href="https://github.com/KSLinuxUAJY/" target="_blank"><img src="if_mark-github_298822.png" width="16px" height="16px" class="img-fluid"/> Git Hub</a>
-				</li>
-				<li class="nav-item">
-						<a class="nav-link" data-toggle="tab" href="#galery">Galery</a>
-					</li>
-				<li>
-					<!-- Dropdown -->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">About Us</a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" data-toggle="tab" href="#profil">Profil</a>
-							<a class="dropdown-item" data-toggle="tab" href="#sejarah">Sejarah</a>
-							<a class="dropdown-item" data-toggle="tab" href="#struktur">Struktur</a>
-						</div>
-					</li>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" data-toggle="tab" href="#contactUs">Contact Us</a>
-				</li>
-			</ul>
-		</nav>
-		<article class="tab-content">
-			<div class="tab-pane container active">
-			</div>
-			<div class="tab-pane container fade konten" id="upcomingEvents">
-				<h1 class="judul">Open Recruitment Anggota KSL TA 2018/2019</h1>
-				<p><span style="display:inline-block; width:50px;"></span> 
-					Isi
-				</p>
-			</div>
-			<div class="tab-pane container fade konten carousel slide" id="galery" data-ride="carousel">
-					<h1 class="judul">Galery</h1>
-					<!-- Iniccators -->
-					<ul class="carousel-indicators">
-						<li data-target="#galery" data-slide-to="0" class="active"></li>
-						<li data-target="#galery" data-slide-to="1"></li>
-						<li data-target="#galery" data-slide-to="2"></li>
-					</ul>
-
-					<!-- Slide Show -->
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<img src="proxy.duckduckgo.com.png" class="img-fluid mx-auto d-block" alt="Gambar 1"/>
-						</div>
-						<div class="carousel-item">
-								<img src="bagan.png" class="img-fluid mx-auto d-block" alt="Gambar 2"/>
-						</div>
-						<div class="carousel-item">
-								<img src="insta.png" class="img-fluid mx-auto d-block" alt="Gambar 3"/>
-						</div>
+		<section class="section">
+			<div class="container">
+			  <h1 class="title">Upcoming Events</h1>
+			  <h2 class="subtitle">
+				A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+				</h2>
+				<div class="events">
+					{{#event}}
+					<div class="box event">
+						<h5 class="title 5">{{name}}</h5>
+						<h5 class="subtitle is-5">{{date}}</h5>
+						<p>{{desc}}</p>
 					</div>
-
-					<!-- LnR Ctrl-->
-					<a class="carousel-control-prev" href="#galery" data-slide="prev">
-						<span class="carousel-control-prev-icon"></span>
-					</a>
-					<a class="carousel-control-next" href="#galery" data-slide="next">
-						<span class="carousel-control-next-icon"></span>
-					</a>
-				</div>
-			<div class="tab-pane container fade konten" id="profil">
-				<h1 class="judul">Profil</h1>
-				<p><span style="display:inline-block; width:50px;"></span> 
-					Kelompok Studi Linux Universitas Atma Jaya Yogyakarta adalah
-					salah satu kelompok studi yang berada di bawah <a style="color: inherit;" href="https://himaforka-uajy.org/" data-toggle="tooltip" title="Himpunan Mahasiswa Teknik Informatika UAJY" target="_blank">Himaforka</a>
-					<a style="color: inherit;" href="http://www.uajy.ac.id/" data-toggle="tooltip" title="Universitas Atma Jaya Yogyakarta" target="_blank"> UAJY</a>
-					dan merupakan wadah bagi mahasiswa <a style="color: inherit; text-decoration: none;" href="https://fti.uajy.ac.id/" target="_blank">Fakultas Teknik Industri</a> yang ingin
-					mempelajari sistem operasi linux dan hal-hal lain yang berkaitan dengannya.<br/>
-				</p>
+					{{/event}}
+				</div>			  
 			</div>
-			<div class="tab-pane container fade konten" id="sejarah">
-					<h1 class="judul">Sejarah</h1>
-					<p><span style="display:inline-block; width:50px;"></span> 
-						Saya saja tidak tahu.
-					</p>
-				</div>
-				<div class="tab-pane container fade konten" id="struktur">
-						<h1 class="judul">Struktur</h1>
-						<img src="bagan.png" class="mx-auto d-block img-fluid" alt="Struktur Organisasi KSL UAJY"/>
-				</div>
-				<div class="tab-pane container fade konten" id="contactUs">
-						<h1 class="judul">Contact Us</h1>
-						<div>
-								<img class="img-fluid iconContact" src="seo3-22-512.png"/>: ksl@himaforka-uajy.com
-						</div>
-						<div>
-								<img class="img-fluid iconContact" src="insta.png"/>: @ksl.uajy
-						</div>
-				</div>
-		</article>
-		<footer id="footer" class="jumbotron text-center">
-			<p>Kelompok Studi Linux UAJY © 2018</p>
-		</footer>
+		  </section>
 	</body>
-</html>
 
-<!-- Internal JS -->
-<script>
-	$(document).ready(function(){
-	$('[data-toggle="tooltip"]').tooltip();
-});
-</script>
+	<footer class="footer" style="background-color: #000;">
+		<div class="content has-text-centered">
+			<span style="color:white">Kelompok Studi Linux UAJY © 2018 - <a href="vriyas.com">vriyas.com</a></span>
+		</div>
+	</footer>
+</html>
