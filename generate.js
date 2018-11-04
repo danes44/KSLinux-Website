@@ -1,6 +1,7 @@
 const fs = require('fs')
 const Mustache = require('mustache')
 const event = require('./data/event.json')
+const materi = require('./data/materi.json')
 const ncp = require('ncp').ncp
 const dir = `${__dirname}/out`
 
@@ -17,6 +18,7 @@ ncp(`${__dirname}/static`, dir, err => {
 fs.writeFileSync(
     `${__dirname}/out/index.html`,
     Mustache.render(fs.readFileSync('index.html').toString(), {
-        event 
+        event,
+        materi 
     })
 )

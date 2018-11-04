@@ -1,0 +1,28 @@
+{
+    "2018": [
+        {
+            "title": "Pengenalan dan Instalasi Linux",
+            "author": "Wahyu CB"
+        },
+        {
+            "title": "Command Line Interface",
+            "author": "Alisha Aileen"
+        },
+        {
+            "title": "User Management and File Permission",
+            "author": "Owen"
+        },
+        {
+            "title": "Introduction To Ethical Hacking",
+            "author": "Andreas BJ"
+        },
+        {
+            "title": "Foot Printing and Reconnaissance",
+            "author": "Andreas Widi"
+        },
+        {
+            "title": "Jaringan Komputer 1",
+            "author": "Albertus"
+        }
+    ]
+}

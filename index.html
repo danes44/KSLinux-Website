@@ -21,6 +21,11 @@
 	<body>
 		<section class="section">
 			<div class="container">
+				<img src="/images/logo.png">
+			</div>
+		</section>
+		<section class="section">
+			<div class="container">
 			  <h1 class="title">Upcoming Events</h1>
 			  <h2 class="subtitle">
 				A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
@@ -35,7 +40,26 @@
 					{{/event}}
 				</div>			  
 			</div>
-		  </section>
+			</section>
+			
+			<section class="section">
+					<div class="container">
+						<h1 class="title">Materi</h1>
+						<h2 class="subtitle">
+						A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+						</h2>
+						{{#materi}}
+						{{#2018}}
+						<div class="">
+							<h5 class="title 5">{{title}}</h5>
+							<h5 class="subtitle is-5">{{author}}</h5>
+						</div>
+						{{/2018}}
+						{{/materi}}
+					</div>		  
+					</div>
+					</section>
+		
 
 		  <section class="section">
 			  <div class="container">
